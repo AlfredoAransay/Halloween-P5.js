@@ -17,6 +17,7 @@ Esta aplicación web utiliza la cámara del dispositivo donde se ejecute para de
 ### Audio
 * pass
 ## Estructura del código
+```
 Halloween P5js/
 ├── fonts/
 │   └── Creepster-Regular.ttf
@@ -36,6 +37,7 @@ Halloween P5js/
 ├── Sketch.js
 ├── styles.css
 └── README.md
+```
 ## Tecnologías utilizadas
 * HTML5 Canvas _ Superficie de dibujo para elementos 2D
 * p5.js 2.3.3 _ Framework principal para gráficos y animación
