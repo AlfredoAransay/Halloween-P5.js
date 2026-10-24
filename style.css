@@ -1,0 +1,135 @@
+/* Fuentes */
+.creepster-regular {
+  font-family: "Creepster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #140806;
+  background-image: radial-gradient(circle at center, #2e140d 0%, #170a07 55%, #0a0302 100%);
+  color: #ffffff;
+  font-family: system-ui, Arial, sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+.precarga-contenido {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Icono de Calabaza (SVG con efecto flotante sutil) */
+.calabaza-envoltorio {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 24px;
+  animation: calabazaFlotante 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes calabazaFlotante {
+  0% {
+    transform: translateY(0px) scale(1);
+    filter: drop-shadow(0 4px 8px rgba(255, 85, 0, 0.2));
+  }
+  100% {
+    transform: translateY(-6px) scale(1.03);
+    filter: drop-shadow(0 10px 18px rgba(255, 85, 0, 0.5));
+  }
+}
+
+/* Título Principal "Invocando calabaza ..." */
+.cargando-titulo {
+  font-size: clamp(1.2rem, 4vw, 2.1rem);
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-bottom: 22px;
+  color: #ff6600;
+  /* Resplandor neón naranja preciso al de la imagen */
+  text-shadow: 
+    0 0 8px rgba(255, 102, 0, 0.9),
+    0 0 16px rgba(255, 85, 0, 0.6),
+    0 0 28px rgba(255, 51, 0, 0.3);
+}
+
+/* Barra de cargando ..." */
+.cargando-barra {
+  width: 100%;
+  max-width: 380px;
+  height: 18px;
+  background-color: #1a0c08;
+  border: 4px solid #482115;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  padding: 1.5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.cargando-progreso {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #e64a00 0%, #ff6600 50%, #ff8800 100%);
+  border-radius: 4px;
+  box-shadow: 0 0 10px #ff6600, 0 0 4px #ffaa00;
+  transition: width 0.15s ease-out;
+}
+
+/* Oculta la precarga cuando la carga esta completa */
+.precarga-oculta {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Estilos para botones de cámara creados desde p5.js */
+.btn-camara {
+  padding: 15px 25px;
+  font-size: 16px ;
+  font-weight: bold;
+  border: 3px solid;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) ;
+}
+
+.btn-camara.start {
+  background:  #ff8c00;
+  color: white;
+}
+
+.btn-camara.start:hover {
+  transform: scale(1.05);
+}
+
+.btn-camara.stop {
+  background:  #8b0000;
+  border-color: #fff;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+}
+
+.btn-camara.stop:hover {
+  transform: scale(1.05) ;
+}

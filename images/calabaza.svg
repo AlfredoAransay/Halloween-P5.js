@@ -1,0 +1,19 @@
+<svg viewBox="0 0 64 64" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+	<!-- Tallo Marrón -->
+	<path d="M30 16 C 30 10, 35 6, 38 4 C 36 9, 34 12, 33 16 Z" fill="#3d2112" stroke="#0a0302" stroke-width="1.2" />
+	<!-- Hoja Verde -->
+	<path d="M 33 12 C 38 10, 44 11, 46 13 C 41 15, 36 16, 33 12 Z" fill="#2e7d32" stroke="#0a0302" stroke-width="1" />
+	<!-- Cuerpo de la Calabaza -->
+	<ellipse cx="32" cy="38" rx="26" ry="20" fill="#f85a00" stroke="#0a0302" stroke-width="2.5"/>
+	<ellipse cx="32" cy="38" rx="18" ry="20" fill="#ff6a00" stroke="#0a0302" stroke-width="1.8"/>
+	<ellipse cx="32" cy="38" rx="9" ry="20" fill="#ff7a00" stroke="#0a0302" stroke-width="1.5"/>
+	<!-- Ojos Triangulares Tallados -->
+	<polygon points="21,30 27,33 22,37" fill="#0a0302"/>
+	<polygon points="43,30 37,33 42,37" fill="#0a0302"/>
+	<!-- Nariz -->
+	<polygon points="32,35 30,38 34,38" fill="#0a0302"/>
+	<!-- Boca Tallada de Halloween -->
+	<path d="M 18 43 Q 24 51 32 51 Q 40 51 46 43 Q 41 45 32 45 Q 23 45 18 43 Z" fill="#0a0302"/>
+	<polygon points="25,44 27,47 29,44" fill="#0a0302"/>
+	<polygon points="35,44 37,47 39,44" fill="#0a0302"/>
+</svg>
