@@ -1,9 +1,9 @@
 /* Fuentes */
-.creepster-regular {
+/* .creepster-regular {
   font-family: "Creepster", system-ui;
   font-weight: 400;
   font-style: normal;
-}
+} */
 
 html, body {
   margin: 0;
@@ -37,12 +37,22 @@ canvas {
   align-items: center;
 }
 
-/* Icono de Calabaza (SVG con efecto flotante sutil) */
+/* Icono de Calabaza (Efecto flotante sutil) */
 .calabaza-envoltorio {
   width: 128px;
   height: 128px;
   margin-bottom: 24px;
   animation: calabazaFlotante 2.5s ease-in-out infinite alternate;
+}
+
+/* Logotipo de HealthySmile */
+.logotipo img {
+  width: 250px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes calabazaFlotante {
@@ -97,6 +107,7 @@ canvas {
 .precarga-oculta {
     opacity: 0;
     pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
 }
 
 /* Estilos para botones de cámara creados desde p5.js */
@@ -113,16 +124,19 @@ canvas {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) ;
 }
 
-.btn-camara.start {
+.btn-camara.empezar {
   background:  #ff8c00;
   color: white;
 }
 
-.btn-camara.start:hover {
-  transform: scale(1.05);
+.btn-camara.empezar:hover {
+  background-color: #ff6a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 85, 0, 0.6);
+  border-color: #ffffff;
 }
 
-.btn-camara.stop {
+.btn-camara.reiniciar {
   background:  #8b0000;
   border-color: #fff;
   height: 30px;
@@ -130,6 +144,6 @@ canvas {
   padding: 5px;
 }
 
-.btn-camara.stop:hover {
+.btn-camara.reiniciar:hover {
   transform: scale(1.05) ;
 }
